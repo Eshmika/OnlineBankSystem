@@ -1,0 +1,124 @@
+@charset "ISO-8859-1";
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+.footernav {
+	overflow: hidden;
+	background-color: #3d3d5c;
+	padding: 15px;
+}
+
+.footerul {
+	list-style-type: none;
+	margin-left: 10;
+	padding: 10;
+	overflow: hidden;
+}
+
+.footerli a {
+	display: block;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 15px;
+	color: white;
+	text-align: left;
+	padding: 5px 1px;
+	text-decoration: none;
+}
+
+.navbar {
+	overflow: hidden;
+	background-color: #000066;
+	font-family: Arial;
+}
+
+.navbar a {
+	float: left;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.dropdown {
+	float: left;
+	overflow: hidden;
+	font-family: Arial;
+}
+
+.dropdown .dropbtn,
+.transfbtn {
+	font-size: 16px;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: inherit;
+	margin: 0;
+	font-family: Arial;
+}
+
+.transfbtn {
+	color: #000066;
+	text-decoration: none;
+	min-width: 160px;
+	text-align: left;
+}
+
+.navbar a:hover,
+.active,
+.dropdown:hover .dropbtn,
+.transfbtn:hover {
+	background-color: #6699ff;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px #000066;
+	z-index: 1;
+}
+
+.dropdown-content a {
+	float: none;
+	color: #000066;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.cardsubmitbtn {
+	background-color: #000066;
+	color: #ffffff;
+	padding: 14px;
+	margin: 8px;
+	border: none;
+	cursor: pointer;
+	width: 50%;
+	border-radius: 10px;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.cardsubmitbtn:hover {
+	background-color: #6699ff;
+}
+
+.cardsubmitbtn:active {
+	transform: scale(1.09);
+}

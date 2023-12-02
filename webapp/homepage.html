@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<link rel="stylesheet" href="homepage.css">
+
+</head>
+<style>
+	body {
+		background-image: url('homepagebg.jpg');
+		/* Path to your background image */
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	}
+	
+	
+</style><br><br><br><br><br><br>
+
+<body class="body">
+	
+<!--	header-->
+	<table class="topnav" style="width:100%; border:1px solid;">
+		<tr>
+			<td>
+				<img src="Images/logo.jpg" alt="LOGO" width="210px" height="50px">
+			</td>
+		</tr>
+	</table>
+
+	<div class="navbar">
+		<a href="homepage.html">Home</a>
+		<form action="customerview" method="post">
+			<div class="dropdown">
+				<button class="dropbtn">User Information</button>
+			</div>
+		</form>
+		<div class="dropdown">
+			<button class="dropbtn">
+				Transactions <i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<form action="selects" method="post">
+
+					<button type="submit" class="transfbtn">View Transfer</button>
+				</form>
+				<a href="FundTransfer.jsp">Fund Transfer</a>
+			</div>
+		</div>
+		<div class="dropdown">
+			<button class="dropbtn">
+				Bank Card <i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<form action="CardCheck" method="post">
+
+					<button type="submit" class="transfbtn">Request a Bank card</button>
+				</form>
+				<form action="updateCardCheck" method="post">
+
+					<button type="submit" class="transfbtn">Update the expire card</button>
+				</form>
+				<form action="deleteCardCheck" method="post">
+
+					<button type="submit" class="transfbtn">Cancel the card</button>
+				</form>				
+			</div>
+		</div>
+		<a href=" ">Bank Accounts</a>
+		<form action="logout" method="post">
+			<div class="dropdown">
+				<button class="dropbtn">Log out</button>
+			</div>
+		</form>
+	</div>
+<!--content--><br><br><br>
+	<div class="container">
+		<div class="left-side">
+			<img src="avtar.png" class="avatar">
+
+			<h1 class="h1"> Welcome to Online ABC Bank </h1><br>
+
+			<div class="forms">
+				<form class="Login1" method="#" action="#" id="loginForm" onsubmit="return validateForm()"><br>
+
+
+
+					<div class="sign1" class="container"> <br>
+
+						<span></span>
+
+						<a href="#" class="a1">
+						</a><br><br>
+					</div>
+
+				</form>
+			</div>
+		</div>
+
+		<div class="right-side">
+			<!-- Existing content on the right side -->
+			<br /><br /><br /><br />
+			<div>
+				<br>
+				<div class="container3"><b>
+						<p class="better-experience"> Creating a better</p>
+						<p class="better-experience2">banking</p>
+						<p class="better-experience3">experience for</p>
+						<p class="better-experience4">you</p>
+				</div>
+			</div>
+			<!-- ... Your content goes here ... -->
+		</div>
+	</div>
+	
+	<!-- Footer -->
+
+	<table class="footernav" style="width: 100%;">
+		<tr>
+			<td style="width: 15%;">
+				<p
+					style="font-size: 18px; font-family: Arial; font-weight: bold; color: #6699ff;">ABC
+					Bank</p>
+				<p style="font-size: 12px; font-family: Arial; color: white;">Online
+					banking offers customers the freedom to access their accounts and
+					perform various financial activities anytime, anywhere if they have
+					an internet connection. This accessibility has eliminated the
+					constraints of physical branch visits and banking hours, making it
+					possible for individuals to check balances, transfer funds, pay
+					bills, and even apply for loans from the comfort of their homes or
+					while on the go.</p>
+			</td>
+			<td style="width: 12%;">
+				<ul class="footerul">
+					<li class="footerli"><a href="">User Information</a></li>
+					<li class="footerli"><a href="">View Transaction</a></li>
+					<li class="footerli"><a href="">Fund Transfer</a></li>
+				</ul>
+			</td>
+			<td style="width: 12%;">
+				<ul class="footerul">
+					<li class="footerli"><a href="">Request a Bank Card</a></li>
+					<li class="footerli"><a href="">Update the expire card</a></li>
+					<li class="footerli"><a href="">Cancel the bank card</a></li>
+				</ul>
+			</td>
+			<td style="width: 12%;">
+				<ul class="footerul">
+					<li class="footerli"><a href="">Customer Support</a></li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+</body>
+
+</html>
